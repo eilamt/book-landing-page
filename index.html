@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>אי בגובה המים — תמר עילם</title>
+
+<!-- SEO -->
+<meta name="description" content="רומן ראשון של ד״ר תמר עילם. אסיה, חוקרת ואמא, מתמודדת עם בתה שפוגעת בעצמה ועם אובססיה גוברת למשבר האקלים. הוצאת התחנה, 2026.">
+<meta name="author" content="תמר עילם">
+
+<!-- Open Graph (replace YOUR-DOMAIN with the real URL before publishing) -->
+<meta property="og:type" content="book">
+<meta property="og:locale" content="he_IL">
+<meta property="og:title" content="אי בגובה המים — תמר עילם">
+<meta property="og:description" content="רומן ראשון של ד״ר תמר עילם. אסיה, חוקרת ואמא, מתמודדת עם בתה שפוגעת בעצמה ועם אובססיה גוברת למשבר האקלים. הוצאת התחנה, 2026.">
+<meta property="og:image" content="https://YOUR-DOMAIN/cover-front.jpg">
+<meta property="og:image:width" content="827">
+<meta property="og:image:height" content="1240">
+<meta property="og:image:alt" content="כריכת הספר אי בגובה המים מאת תמר עילם">
+<meta property="og:url" content="https://YOUR-DOMAIN/">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="אי בגובה המים — תמר עילם">
+<meta name="twitter:description" content="רומן ראשון של ד״ר תמר עילם. אסיה, חוקרת ואמא, מתמודדת עם בתה שפוגעת בעצמה ועם אובססיה גוברת למשבר האקלים. הוצאת התחנה, 2026.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN/cover-front.jpg">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3TFCE8PLT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C3TFCE8PLT');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700;900&family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #E8DDD0;
+    --ink: #1A1A1A;
+    --ink-light: #555;
+    --teal: #4A6D6A;
+    --teal-light: #E8EEEE;
+    --rule: #D8D4CE;
+    --serif: 'Frank Ruhl Libre', serif;
+    --sans: 'Heebo', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 17px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 40px 60px;
+    background: transparent;
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .hero-text { }
+
+  .hero-label {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: var(--teal);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(52px, 8vw, 86px);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+
+  .hero-author {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--ink-light);
+    margin-bottom: 40px;
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .btn-buy {
+    display: inline-block;
+    background: var(--teal);
+    color: #fff;
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding: 14px 36px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .btn-buy:hover { background: #3a5856; }
+  .btn-buy-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--teal);
+    border: 1px solid var(--teal);
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding: 14px 36px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-buy-outline:hover { background: var(--teal); color: #fff; }
+
+  .cover-flip img {
+    width: 100%;
+    display: block;
+    box-shadow: 12px 16px 40px rgba(0,0,0,0.18);
+  }
+  .cover-flip-btn {
+    display: block;
+    width: 100%;
+    margin-top: 14px;
+    background: none;
+    border: none;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    color: var(--teal);
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+  }
+  .cover-flip-btn:hover { color: var(--ink); }
+
+  /* ── DIVIDER ── */
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 70px 40px;
+  }
+
+  .section-label {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    color: var(--teal);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .section p {
+    font-size: 17px;
+    color: var(--ink);
+    margin-bottom: 1.2em;
+  }
+
+  /* ── CHAPTER ── */
+  .chapter-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: 1px solid var(--rule);
+    color: var(--teal);
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    padding: 12px 28px;
+    cursor: pointer;
+    margin-bottom: 36px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .chapter-toggle:hover {
+    border-color: var(--teal);
+    background: #DDE0DA;
+  }
+  .chapter-toggle .arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+    font-size: 12px;
+  }
+  .chapter-toggle.open .arrow { transform: rotate(180deg); }
+
+  .chapter-text {
+    display: none;
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 2;
+    color: var(--ink);
+    border-right: 3px solid var(--teal);
+    padding-right: 28px;
+    margin-top: 8px;
+  }
+  .chapter-text.visible { display: block; }
+  .chapter-text p { margin-bottom: 1.4em; }
+
+  /* ── STORIES ── */
+  .stories-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 8px;
+  }
+
+  .story-card {
+    border: 1px solid var(--rule);
+    padding: 28px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.2s, background 0.2s;
+    display: block;
+  }
+  .story-card:hover {
+    border-color: var(--teal);
+    background: #DDE0DA;
+  }
+  .story-card .story-venue {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: var(--teal);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .story-card .story-title {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .story-card .story-arrow {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--teal);
+  }
+
+  /* ── SIGNUP ── */
+  .signup-form { margin-top: 8px; }
+  .signup-fields {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .signup-fields input {
+    flex: 1;
+    min-width: 160px;
+    background: transparent;
+    border: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ink);
+    padding: 12px 16px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .signup-fields input:focus { border-color: var(--teal); }
+  .signup-fields input::placeholder { color: var(--ink-light); }
+  .signup-fields button {
+    background: var(--teal);
+    color: #fff;
+    border: none;
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding: 12px 28px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .signup-fields button:hover { background: #3a5856; }
+  .signup-msg {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+  .signup-msg.success { color: var(--teal); }
+  .signup-msg.error { color: #b0392b; }
+
+  /* ── AUTHOR ── */
+  .author-section {
+    background: #DDD3C4;
+    padding: 70px 40px;
+  }
+  .author-inner {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 13px;
+    color: var(--ink-light);
+    border-top: 1px solid var(--rule);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 700px) {
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 50px 24px 40px;
+      gap: 40px;
+    }
+    .hero { grid-template-areas: "cover" "text"; }
+    .hero-text { grid-area: text; }
+    .cover-flip { grid-area: cover; max-width: 260px; margin: 0 auto; }
+    .hero-title { font-size: 52px; }
+    .stories-grid { grid-template-columns: 1fr; }
+    .section { padding: 50px 24px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .chapter-toggle .arrow { transition: none; }
+    .chapter-text { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-label">רומן ● הוצאת התחנה ● 2026</div>
+    <h1 class="hero-title">אי בגובה<br>המים</h1>
+    <div class="hero-author">תמר עילם</div>
+    <div class="btn-group">
+      <a href="https://www.e-vrit.co.il/Author/21729/תמר_עילם" class="btn-buy" target="_blank" rel="noopener">לקניה באתר עברית</a>
+      <a href="https://bookstop.co.il/book/אי-בגובה-המים-תמר-עילם/" class="btn-buy-outline" target="_blank" rel="noopener">לקניה באתר התחנה</a>
+    </div>
+  </div>
+  <div class="cover-flip">
+    <img id="coverImg" src="cover-front.jpg" alt="כריכה קדמית">
+    <button class="cover-flip-btn" onclick="flipCover(this)">← גב הספר</button>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ABOUT THE BOOK -->
+<section class="section">
+  <div class="section-label">על הספר</div>
+  <p>הספר עוקב אחר אסיה, גרושה טריה שלא מרצונה, אמא לאנה, וחוקרת במעבדה יוקרתית. אסיה רגילה להיות בשליטה — לדעת את התשובות, לפתור בעיות. אבל פתאום היא מוצאת את עצמה חסרת אונים: בתה החלה לפגוע בעצמה, ומערכת היחסים עם אביה של אנה מתדרדרת. במקביל, אסיה מפתחת אובססיה למשבר האקלים שמשתלט על חייה — בבית ובעבודה — בניגוד לכל מה שמצופה ממנה.</p>
+  <p>החיפוש אחר פתרונות בשני המישורים — הפרטי והגלובלי — מוביל אותה למקומות בלתי צפויים, נפשיים וממשיים כאחד.</p>
+  <p>הספר מדבר על הקשר בין אם לבתה, על פצע בין-דורי, ועל חיפוש אחר הגדרה ומשמעות. הוא ידבר אל כל מי ששואל שאלות.</p>
+</section>
+
+<hr class="rule">
+
+<!-- EMAIL SIGNUP -->
+<section class="section">
+  <div class="section-label">עדכונים</div>
+  <p>רוצים לקבל עדכונים? השאירו שם ומייל.</p>
+  <form class="signup-form" id="signupForm" action="https://formspree.io/f/mzdlanok" method="POST">
+    <div class="signup-fields">
+      <input type="text" name="name" placeholder="שם" required>
+      <input type="email" name="email" placeholder="כתובת מייל" required>
+      <button type="submit">שלח</button>
+    </div>
+    <p class="signup-msg" id="signupMsg"></p>
+  </form>
+</section>
+
+<hr class="rule">
+
+<!-- FIRST CHAPTER -->
+<section class="section">
+  <div class="section-label">קריאה ראשונה</div>
+  <button class="chapter-toggle" onclick="toggleChapter(this)" aria-expanded="false">
+    פרק ראשון <span class="arrow">▾</span>
+  </button>
+  <div class="chapter-text" id="chapterText">
+    <p>אסיה משרכת את רגליה בכבדות בשביל הריצה במעלה נהר ההדסון לכיוון צפון. חם ולח בחוץ. אין טיפת רוח. העצים עומדים כמו פסלי אבן כבדים, לא זזים אפילו מילימטר. המים דוממים ואינם מלחכים כהרגלם את הסלעים הנושקים להם. הברווזים בנהר עומדים. איך הם עומדים ככה, בטור ישר אחד אלכסוני ומושלם? גם האוניות הגדולות, אוניות המשא, כל אחת מהן נושאת מכשירים ומנופים, בצבעי צהוב, אדום וכחול, כולן עומדות, כמו חיות פרה-היסטוריות גדולות ממדים שנשכחו שם מעידן אחר. נטושות בטח, היא חושבת. כל העובדים נטשו. מסלול הריצה נטוש. אי אפשר לנשום בכלל. חבל שיצאה. עשתה טעות. אבל היא היתה חייבת כבר לצאת משם. לנשום. אי אפשר יותר עם הלחץ הזה בבית. כלומר: עם אנה. אנה, שמסתובבת בבית כמו רוח רפאים עם גרב גזורה, בלויה, בצבע צהוב דהוי על אמת היד, המבט שלה מושפל לרצפה, לא מוציאה מילה מהפה.</p>
+    <p>את כל היום העבירה אסיה בטלפונים, מקפידה להסתגר בפרטיות חדר השינה שלה כשהיא מדברת. היא מחפשת המלצות, מתייעצת, מתחננת שלא ישימו אותה בעוד רשימת המתנה. אי אפשר לחכות עם הדבר זה, היא מסבירה. כן, היא מבינה. יש הרבה ילדים במשבר. כולם אומרים לה. בסוף היא מצליחה לדבר עם הפסיכיאטרית. דוקטור פוקס קוראים לה. היא המומלצת מספר אחת. המלצה של סוזן. סוזן נשבעה לה שהיא מכירה אישית סיפורים אחרים שבהם דוקטור פוקס הצליחה לעזור בוודאות, אפילו עשתה ניסים ממש.</p>
+    <p>כבר בטלפון אסיה הסבירה לדוקטור פוקס את הבעיה, הסבירה בקיצור ולעניין, ענתה על כל השאלות, השתדלה לשמור על קור רוח, לדבר בהיגיון, שדוקטור פוקס לא תחשוב חס וחלילה שגם לה יש בעיות. היא יודעת שאת זה הפסיכיאטרים הכי מתעבים. הם רוצים הורים שקל לעבוד איתם. נורמלים. כאלה שחושבים בהיגיון, לא מתווכחים, והכי חשוב: שומרים על קור רוח.</p>
+    <p>היא הסבירה לדוקטור פוקס שגילתה את החתכים בחופשה השנתית בישראל, בדיוק לפני שבוע ימים. איך היא גילתה? בחוף הים. לא, לפני זה היא לא ידעה. כלום. לא היה לה מושג. היא לא מבינה בדברים כאלה. זה לא התחום שלה. לא, היא בטכנולוגיה ומדע. היא אפילו לא הבינה מה זה בהתחלה. היא לא סיפרה לדוקטור פוקס שהיא נלחצה והתחילה לצעוק: אנה מה זה? מי עשה לך את זה? תגידי לי. מהר! מיד! ואנה סיננה בשקט בקול חנוק: אמא, אני צריכה אותך רגועה עכשיו. היא גם לא סיפרה לדוקטור פוקס שאנה ביקשה ממנה תרופות, כמה פעמים, אבל שאסיה לא הסכימה. בשום אופן לא, היא אמרה לה.</p>
+    <p>אסיה בכלל לא האמינה בפסיכיאטרים ובטח שלא בתרופות. הכי היא פחדה מטעויות במינון. בראש היא כבר דמיינה כל מיני תסריטים. היא מתעוררת באמצע הלילה ולוקחת בחושך את התרופה הלא נכונה. משהו שמיד הורג אותה. לא. משהו שמסמם אותה קודם, כך שהיא בכלל לא מבינה שהיא הולכת למות ושהיא צריכה לעשות משהו בנדון. ואפילו בלי טעויות מהסוג הזה, את לא באמת יודעת מה התרופות עושות לך, איך הן משחקות לך במוח, במחשבה, משנות אותה כך שאי אפשר בעצם יותר לסמוך על שיקול הדעת שלך אחרי התרופות. אי אפשר לסמוך שתעמדי על המשמר מכל צרה, שתדעי מה לעשות. אסיה גם התנגדה לכל העניין באופן עקרוני. היא האמינה בלהתמודד ראש בראש עם כל בעיה. כל בעיה אפשר לפתור עם כוח רצון והיגיון. לא לבחור בדרך הקלה. תרופות זאת הדרך הקלה. היא הרי יכולה להתחרות עם כל אחד בבעיות מהילדות, בטראומות. עם כל אחד. והנה היא פה. בניו יורק. אפילו יש לה מקצוע טוב. בקיצור: התמודדה. מה שלא הורג — מחשל, אמא שלה תמיד אומרת.</p>
+    <p>אבל מאז החתכים היא כבר לא חושבת ככה. זהו, היא נכנעה. אנה ניצחה בקרב הזה. עד עכשיו הבעיות היו קטנות, או לפחות ככה אסיה חשבה. אולי לא קטנות, אבל רגילות. היא לא התרגשה. היא לא חשבה שצריך לעשות משהו. גיל ההתבגרות. כולם הרי הזהירו אותה מראש. נכון שאנה התלוננה הרבה על המצב עם אבא שלה ועל עוד דברים. גם על בית הספר החדש שהתחילה בשנה שעברה. לפעמים היא הסתגרה בחדר שלה במשך שעות. אבל זה רגיל, אסיה חשבה. אין משפחה בלי בעיות. גיל ההתבגרות, נו. אבל עכשיו? עכשיו כבר אין בכלל שום שאלה. שום שאלה, היא אומרת בקול. מדברת לעצמה תוך כדי שהיא בוהה בברווזים שעדיין לא זזו אפילו מילימטר, כאילו תקועים בבטון, לא במים.</p>
+    <p>לא, היא גמרה אותה עכשיו עם הסיפור הזה. עכשיו היא תעשה את מה שצריך. כלומר את מה שיגידו לה המומחים. אין לה ברירה, כי כנראה שהיא באמת לא מבינה כלום. דוקטור פוקס כבר הדריכה אותה בטלפון: לבוא ל״אין-טייק״ בשבוע הבא. שעה וחצי — אנה, ואחר כך שעה וחצי — היא. תשע מאות דולר. תשלום מראש. בינתיים, לא לחכות, להחביא את כל הסכינים והמספריים. מה זאת אומרת להחביא? להחביא. למצוא מקום. לדחוף הכול בארון הבגדים למשל. די. נגמר לה האוויר. היא היתה חייבת לצאת.</p>
+    <p>נטוש כאן היום. אפילו הרצים ברמה האולימפית, עם הבגדים המבהיקים, אלה שיוצאים לרוץ גם בסערות גשמים עזות, החליטו לוותר בחום הזה. היא מכירה אחד כזה, טים. הוא גר קרוב אליה, מרחק חמש דקות הליכה. בטח גם הוא בבית עכשיו כמו כולם, במזגן. היה נחמד אם היה אפשר לעצור אצלו. הם היו מחסלים ביחד איזה בקבוק יין, שתמיד יש לו מוכן, ואז הוא היה מסתער עליה. מתחיל בפטמות, מרוכז במשימה כמו חייל בקרב. אבל אי אפשר עכשיו. בלי שטויות. באמת. כלב אחד, לבן ומלוכלך, רץ לעברה, מרחרח אותה וממשיך לרוץ צפונה. חמוד כזה, היא חושבת. איפה הבעלים שלו? היא דואגת. ננטש, אולי?</p>
+    <p>אולי היא תקשיב למשהו, אסיה חושבת. להסיח את הדעת מהבעיות. היא מחליטה להקשיב לפודקאסט ״פרֵש אֵייר״ של אֵן-פִּי-אָר. אבל היא שכחה אוזניות. לא נורא, ממילא אין כאן אף אחד. אפשר פשוט להקשיב בקול. מראיינים שם אחד, פרופסור בּלֵק, מומחה לאקלים. הקול שלו מהדהד ממנה לנהר עם הברווזים ובחזרה. הדוח — החמור מאוד, יש לציין — הוא אומר ומכחכח בגרון, של האו״ם משנת אלפיים ושמונה-עשרה, המעיט בגודל הבעיה. הם לא הביאו בחשבון את יחסי הגומלין בין המערכות הגאו-אקולוגיות השונות. למשל, מכיוון שהקרח נמס באנטארקטיקה בקצב מוגבר, לא רק שיש עכשיו פחות מה שישקף כמו מראה את קרני השמש החוצה, שלא יילכדו, אלא שגם גז פרה-היסטורי, שהיה לכוד בין השכבות, משתחרר. גז מסוג מתאן, שהוא אלים הרבה יותר מהפחמן הרגיל שאנחנו פולטים. אלים כלפי כדור הארץ, הכוונה. מי יודע מה עוד קבור שם שמשתחרר, אסיה חושבת. היא עוצרת לרגע ומתרכזת בנשימה, מסדירה את דפיקות הלב. זה כלום, היא מרגיעה את עצמה.</p>
+    <p>כלב לבן ומלוכלך רץ אליה, מרחרח לשנייה וממשיך לרוץ. עוד אחד. רץ לאותו כיוון. צפונה. אבל איך זה יכול להיות? היא ראתה כבר אחד כזה בדיוק. זה כשלעצמו אינו דבר רגיל, כלב ללא בעלים. ועכשיו שניים תאומים? אולי היא לא באמת ראתה. אולי היא מדמיינת. הזיה של חום. פתיתי שלג לבן מלוכלך בקיץ, שאינם פתיתים. שהם בכלל גיצים לבנים מהשרפה באלסקה. לא שלג, שרפה, בקיץ. מה יש לה? זה לא אלסקה כאן, זאת ניו יורק. עדיף להסתובב ולחזור הביתה. פתאום היא נתקפת בפניקה. אנה! היא מציצה בשעון. כבר כמעט שעה שהיא השאירה אותה בבית לבדה. לבדה בפעם הראשונה, מאז החתכים.</p>
+    <p>למרות החום היא רצה. היא רצה לכל אורך הנהר בחזרה, עד הגשר. מזיעה ומתנשפת, התלתלים שלה נדבקים לה למצח ומסתירים לה את הראייה. היא מסיטה אותם, מוציאה גומייה שהיתה כרוכה לה על האמה, וקושרת הכול מהר הכי טוב שהיא יכולה, לא משנה איך זה נראה עכשיו. היא עוברת מריצה להליכה מהירה, עדיין מתנשפת בכבדות. היא לא בכושר. אי אפשר בקיץ הזה. בסוף היא מגיעה לרחוב שלה, רחוב מאה ותשע מערב. עכשיו היא כבר גוררת את הרגליים. אין כוח. אישה אחת בשיער פרוע, מלא קשרים, לבושת סחבות, מסתובבת שם, ראשה רכון כלפי מטה והיא לא מרימה אותו. היא מחפשת זבל על המדרכה, שקיות נייר או קליפות, ואז נועצת בהן מקל מחודד, מנקה את הרחוב. היא מרוכזת כל כולה במעשה. כמו בשליחות דתית היא עושה את זה. אסיה כבר ראתה אותה כאן, מכירה אותה. כולם מכירים. היא לא יודעת איפה היא גרה, אם יש לה בית בכלל, אבל יום אחר יום היא כאן, ברחוב שלה, עושה את זה. גם עכשיו, למרות החום הגדול. אסיה מעולם לא נתנה עליה את דעתה.</p>
+    <p>מספיק עניינים היו לה מאז שניר עזב. אבל היום, שלא כמו בפעמים אחרות שעברה ליד האישה הזאת, הפעם היא רואה. היא עוצרת ונעמדת מולה, לוטשת עיניים, ואז היא אומרת: תודה שאת מנקה את הרחוב שלנו. האישה מרימה את הראש ונדה לה בראשה. יש לה חיוך עצוב.</p>
+    <p>אסיה מטפסת במדרגות בחופזה, רטובה מזיעה. בועה של קור מתפשטת בחלל האוויר והודפת אותה ברגע שהיא פותחת את הדלת. המזגן עובד בעוצמה ללא הפסקה. היא מוצאת את אנה באותה תנוחה כפי שעזבה אותה, על הספה, המבט שלה נעוץ באינסטגרם. גלי שיער מכסים לה את כל הפנים. קטנה כל כך, שברירית, כפופה. היא לא מרימה את המבט שלה כשאסיה נכנסת, לא מדברת, אפילו לא אומרת שלום. אסיה בולשת מסביב. ספציפית היא בוחנת את הארון, איפה שהחביאה קודם לכן את סכיני הגילוח ואת המספריים. אבל נראה ששום דבר לא זז. היא קורסת על הספה. רוצה לישון איתי היום? היא שואלת את אנה. כן, כמו בכל יום, אנה עונה.</p>
+    <p>מאז החתכים יש לאסיה סיוטים בלילות. יונה לבנה הופיעה אצלה בחלום, יונה שאליה מחוברת באזור החזה כף יד אדם קעורה, שבתוכה טמונה תינוקת זעירה, טמונה שם כמו משה בתיבה שלו, והיונה נמלטת דרך חלון מבית בוער.</p>
+    <p>קל יותר לישון באותה המיטה, כשאנה קרובה אליה. לפחות בלילה היא לא צריכה לדאוג.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- SHORT STORIES -->
+<section class="section">
+  <div class="section-label">סיפורים קצרים</div>
+  <div class="stories-grid">
+    <a class="story-card" href="https://moznaeem.com/קיצי-תמר-עילם/" target="_blank" rel="noopener">
+      <div class="story-venue">מוזנאים</div>
+      <div class="story-title">קיצי</div>
+      <div class="story-arrow">קרא/י ←</div>
+    </a>
+    <a class="story-card" href="https://blog.nli.org.il/mussach-09-06-22-first-publication/" target="_blank" rel="noopener">
+      <div class="story-venue">המוסך — ספריית לאומית</div>
+      <div class="story-title">ציסטה</div>
+      <div class="story-arrow">קרא/י ←</div>
+    </a>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- AUTHOR -->
+<div class="author-section">
+  <div class="author-inner">
+    <div class="section-label">על המחברת</div>
+    <p>ד״ר תמר עילם היא חוקרת מדעי המחשב, המתגוררת בניו יורק. היא כותבת פרוזה בעברית. <em>אי בגובה המים</em> הוא ספרה הראשון.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 תמר עילם &nbsp;·&nbsp; הוצאת התחנה
+</footer>
+
+<script>
+document.getElementById('signupForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const msg = document.getElementById('signupMsg');
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.reset();
+      msg.textContent = 'תודה! אודיע לך כשהספר יוצא.';
+      msg.className = 'signup-msg success';
+    } else {
+      msg.textContent = 'משהו השתבש. אנא נסו שוב.';
+      msg.className = 'signup-msg error';
+    }
+  } catch {
+    msg.textContent = 'משהו השתבש. אנא נסו שוב.';
+    msg.className = 'signup-msg error';
+  }
+});
+
+function flipCover(btn) {
+  const img = document.getElementById('coverImg');
+  const isFront = img.src.includes('cover-front');
+  img.src = isFront ? 'cover-back.jpg' : 'cover-front.jpg';
+  img.alt = isFront ? 'גב הספר' : 'כריכה קדמית';
+  btn.textContent = isFront ? 'כריכה קדמית →' : '← גב הספר';
+}
+
+function toggleChapter(btn) {
+  const text = document.getElementById('chapterText');
+  const isOpen = btn.classList.contains('open');
+  if (isOpen) {
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    text.classList.remove('visible');
+    btn.querySelector('.arrow').textContent = '▾';
+  } else {
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+    text.classList.add('visible');
+    btn.querySelector('.arrow').textContent = '▴';
+  }
+}
+</script>
+</body>
+</html>
