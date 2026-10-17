@@ -401,12 +401,16 @@
 
 <!-- SIGNED COPY (US) -->
 <section class="section">
-  <div class="section-label">לקוראים בארה״ב — עותק חתום</div>
-  <p>עותק חתום, נשלח מניו יורק. מחיר: <bdi>$20 + $6</bdi> משלוח (סה״כ <bdi>$26</bdi>). משלוח בדואר <bdi>USPS</bdi> תוך <bdi>2–8</bdi> ימי עסקים.</p>
-  <p>תשלום ב-Zelle אל: <bdi dir="ltr">eilam.tamar@gmail.com</bdi></p>
-  <p>בשדה ההערה (memo) יש לכתוב שם מלא וכתובת למשלוח.</p>
-  <img src="zelle-qr.png" alt="קוד QR לתשלום ב-Zelle" class="zelle-qr">
-  <p class="zelle-note">לשאלות: <a href="mailto:eilam.tamar@gmail.com" dir="ltr">eilam.tamar@gmail.com</a></p>
+  <button class="chapter-toggle" onclick="toggleSection('zelleText', this)" aria-expanded="false">
+    לקניית עותק חתום — ארה״ב <span class="arrow">▾</span>
+  </button>
+  <div class="chapter-text" id="zelleText">
+    <p>עותק חתום, נשלח מניו יורק. מחיר: <bdi>$20 + $6</bdi> משלוח (סה״כ <bdi>$26</bdi>). משלוח בדואר <bdi>USPS</bdi> תוך <bdi>2–8</bdi> ימי עסקים.</p>
+    <p>תשלום ב-Zelle אל: <bdi dir="ltr">eilam.tamar@gmail.com</bdi></p>
+    <p>בשדה ההערה (memo) יש לכתוב שם מלא וכתובת למשלוח.</p>
+    <img src="zelle-qr.png" alt="קוד QR לתשלום ב-Zelle" class="zelle-qr">
+    <p class="zelle-note">לשאלות: <a href="mailto:eilam.tamar@gmail.com" dir="ltr">eilam.tamar@gmail.com</a></p>
+  </div>
 </section>
 
 <hr class="rule">
@@ -556,8 +560,8 @@ function flipCover(btn) {
   btn.textContent = isFront ? 'כריכה קדמית →' : '← גב הספר';
 }
 
-function toggleChapter(btn) {
-  const text = document.getElementById('chapterText');
+function toggleSection(id, btn) {
+  const text = document.getElementById(id);
   const isOpen = btn.classList.contains('open');
   if (isOpen) {
     btn.classList.remove('open');
@@ -571,6 +575,8 @@ function toggleChapter(btn) {
     btn.querySelector('.arrow').textContent = '▴';
   }
 }
+
+function toggleChapter(btn) { toggleSection('chapterText', btn); }
 </script>
 </body>
 </html>
