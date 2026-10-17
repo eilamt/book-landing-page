@@ -135,6 +135,7 @@
     transition: background 0.2s, color 0.2s;
   }
   .btn-buy-outline:hover { background: var(--teal); color: #fff; }
+  button.btn-toggle { cursor: pointer; }
 
   .cover-flip img {
     width: 100%;
@@ -389,27 +390,19 @@
     <div class="btn-group">
       <a href="https://www.e-vrit.co.il/Author/21729/תמר_עילם" class="btn-buy" target="_blank" rel="noopener">לקניה באתר עברית</a>
       <a href="https://bookstop.co.il/book/אי-בגובה-המים-תמר-עילם/" class="btn-buy-outline" target="_blank" rel="noopener">לקניה באתר התחנה</a>
+      <button class="btn-buy-outline btn-toggle" onclick="toggleSection('zelleText', this)" aria-expanded="false">לקניית עותק חתום — ארה״ב <span class="arrow">▾</span></button>
+    </div>
+    <div class="chapter-text" id="zelleText" style="margin-top: 24px;">
+      <p>עותק חתום, נשלח מניו יורק. מחיר: <bdi>$20 + $6</bdi> משלוח (סה״כ <bdi>$26</bdi>). משלוח בדואר <bdi>USPS</bdi> תוך <bdi>2–8</bdi> ימי עסקים.</p>
+      <p>תשלום ב-Zelle אל: <bdi dir="ltr">eilam.tamar@gmail.com</bdi></p>
+      <p>בשדה ההערה (memo) יש לכתוב שם מלא וכתובת למשלוח.</p>
+      <img src="zelle-qr.png" alt="קוד QR לתשלום ב-Zelle" class="zelle-qr">
+      <p class="zelle-note">לשאלות: <a href="mailto:eilam.tamar@gmail.com" dir="ltr">eilam.tamar@gmail.com</a></p>
     </div>
   </div>
   <div class="cover-flip">
     <img id="coverImg" src="cover-front.jpg" alt="כריכה קדמית">
     <button class="cover-flip-btn" onclick="flipCover(this)">← גב הספר</button>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- SIGNED COPY (US) -->
-<section class="section">
-  <button class="chapter-toggle" onclick="toggleSection('zelleText', this)" aria-expanded="false">
-    לקניית עותק חתום — ארה״ב <span class="arrow">▾</span>
-  </button>
-  <div class="chapter-text" id="zelleText">
-    <p>עותק חתום, נשלח מניו יורק. מחיר: <bdi>$20 + $6</bdi> משלוח (סה״כ <bdi>$26</bdi>). משלוח בדואר <bdi>USPS</bdi> תוך <bdi>2–8</bdi> ימי עסקים.</p>
-    <p>תשלום ב-Zelle אל: <bdi dir="ltr">eilam.tamar@gmail.com</bdi></p>
-    <p>בשדה ההערה (memo) יש לכתוב שם מלא וכתובת למשלוח.</p>
-    <img src="zelle-qr.png" alt="קוד QR לתשלום ב-Zelle" class="zelle-qr">
-    <p class="zelle-note">לשאלות: <a href="mailto:eilam.tamar@gmail.com" dir="ltr">eilam.tamar@gmail.com</a></p>
   </div>
 </section>
 
